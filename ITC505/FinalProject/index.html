@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Lights Out!</h1>
+    <div id="board"></div>
+    <button id="reset" onclick="initializeBoard();">Reset</button>
+    <p>
+        <b>Instructions:</b>
+        <br>
+        Click on a square to toggle its light and the lights of its neighbors. you need to turn off all the lights to
+        win.
+    </p>
+    <p>
+        <footer>
+        <b>Adendum</b>
+        <br>
+        This document describes the development process, creative choices, and challenges encountered during the
+        creation of the Lights Out game. It also highlights the insights gained along the way.
+        <br><br>
+        <b>Development Process:</b>
+        <br>
+        Initial Setup: The first step involved structuring the HTML and CSS files for the game layout and styling.
+        <br>
+        JavaScript Logic: The core functionality was built through JavaScript functions for:
+        <br>
+        Board creation and square initialization.<br>
+        Square toggle on click and adjacent squares flip.<br>
+        Win condition check and click count display.<br>
+        Random board generation with backtracking to ensure solvability.<br><br>
+        <b>Testing and Debugging:</b> The game logic was thoroughly tested and debugged to ensure smooth gameplay and
+        accurate
+        win detection.
+        <br><br>
+        <b>Creative Choices:</b>
+        <br>
+        Visuals: A simple and clean design was chosen to focus on gameplay and avoid distractions.<br>
+        Click Count Display: Adding a click counter adds an additional element of challenge and accomplishment.<br>
+        Win Message Customization: The win alert message was personalized to include the number of clicks for a more
+        satisfying experience.<br><br>
+        <b>Challenges and Solutions:</b>
+        Win Condition Optimization: Initially, the win condition checked for all squares to be off, which could be
+        inefficient. Optimizing it to check for only one remaining light greatly improved responsiveness.<br>
+        <b>Insights Gained:</b><br>
+        JavaScript DOM Manipulation: The development process deepened understanding of manipulating DOM elements through
+        JavaScript, including creating, styling, and adding event listeners.<br>
+        Game Design Considerations: The project provided valuable insights into game design principles, such as
+        balancing difficulty, providing clear instructions, and incorporating feedback mechanisms.<br><br>
+        Overall, the development process of the Lights Out game was a valuable learning experience, allowing for
+        exploration of new concepts and refining existing skills. The final product serves as a fun and challenging game
+        that demonstrates the power of JavaScript and game design principles.
+    </p>
+</footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
